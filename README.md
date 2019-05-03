@@ -7,15 +7,25 @@ v0.1
 Bogdan Vitel
 
 Contents
+
 |
+
 |-ARCentral : The Central application responsible for sending data to the headset
+
 | |- CVProcessor : The video acquisition and processing system
+
 | |- BLECentral : The BLE Central library responsible for sending data from the processor to the headset
+
 | |- GAPITests : Project used for testing GAPI logic
+
 | \- unittests : Circular Buffer and Circular Queue tests
+
 |
+
 |-docs : doxygen documentation
+
 |
+
 \-Terminal : The headset firmware
 
 
