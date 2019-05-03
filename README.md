@@ -21,8 +21,8 @@ ARCentral requirements:
 QtCreator 4.9
 Qt Framework 5.12
 
-OpenCV 4.x latest: https://github.com/opencv
-ArUco latest: https://sourceforge.net/projects/aruco/
+-OpenCV 4.x latest: https://github.com/opencv
+-ArUco latest: https://sourceforge.net/projects/aruco/
 
 Preferably a linux machine
 
