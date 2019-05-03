@@ -1,0 +1,51 @@
+\hypertarget{struct_draw_cmd}{}\section{Draw\+Cmd Struct Reference}
+\label{struct_draw_cmd}\index{DrawCmd@{DrawCmd}}
+
+
+Struct used to describe a graphical operation to be performed on the screen.  
+
+
+
+
+{\ttfamily \#include $<$gapi.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_draw_cmd_a1e6927fa1486224044e568f9c370519b}{id}}
+\item 
+\mbox{\Hypertarget{struct_draw_cmd_a0f561e77fa0f040b637f4e04f6cd8078}\label{struct_draw_cmd_a0f561e77fa0f040b637f4e04f6cd8078}} 
+uint8\+\_\+t \mbox{\hyperlink{struct_draw_cmd_a0f561e77fa0f040b637f4e04f6cd8078}{x}}
+\begin{DoxyCompactList}\small\item\em The x coordinate on the screen where the command should take effect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_draw_cmd_a17f97f62d93bc8cfb4a2b5d273a2aa72}\label{struct_draw_cmd_a17f97f62d93bc8cfb4a2b5d273a2aa72}} 
+uint8\+\_\+t \mbox{\hyperlink{struct_draw_cmd_a17f97f62d93bc8cfb4a2b5d273a2aa72}{y}}
+\begin{DoxyCompactList}\small\item\em The y coordinate on the screen where the command should take effect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_draw_cmd_aff17911edc8208aa8ddb1c7c52c78389}\label{struct_draw_cmd_aff17911edc8208aa8ddb1c7c52c78389}} 
+char \mbox{\hyperlink{struct_draw_cmd_aff17911edc8208aa8ddb1c7c52c78389}{type}}
+\begin{DoxyCompactList}\small\item\em Used to determine what to execute when reading this command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_draw_cmd_af714e69444763fb9a76ec901a014baf1}\label{struct_draw_cmd_af714e69444763fb9a76ec901a014baf1}} 
+void $\ast$ \mbox{\hyperlink{struct_draw_cmd_af714e69444763fb9a76ec901a014baf1}{prev}}
+\begin{DoxyCompactList}\small\item\em Linked list pointer\+: move to previous command in the sector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_draw_cmd_a75b19ffcca77bfc647ff02695958fd95}\label{struct_draw_cmd_a75b19ffcca77bfc647ff02695958fd95}} 
+void $\ast$ \mbox{\hyperlink{struct_draw_cmd_a75b19ffcca77bfc647ff02695958fd95}{next}}
+\begin{DoxyCompactList}\small\item\em Linked list pointer\+: move to next command in the sector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct used to describe a graphical operation to be performed on the screen. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_draw_cmd_a1e6927fa1486224044e568f9c370519b}\label{struct_draw_cmd_a1e6927fa1486224044e568f9c370519b}} 
+\index{DrawCmd@{DrawCmd}!id@{id}}
+\index{id@{id}!DrawCmd@{DrawCmd}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily uint8\+\_\+t id}
+
+\begin{DoxyWarning}{Warning}
+U\+N\+U\+S\+ED. If set, overrides previous draw commands with the same id 
+\end{DoxyWarning}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+utils/gapi.\+h\end{DoxyCompactItemize}

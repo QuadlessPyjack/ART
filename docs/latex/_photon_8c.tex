@@ -1,0 +1,63 @@
+\hypertarget{_photon_8c}{}\section{Photon.\+c File Reference}
+\label{_photon_8c}\index{Photon.c@{Photon.c}}
+
+
+Main entry point into the firmware.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils/gapi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils/ble.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils/circularqueue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils/payload\+Types.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_photon_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_photon_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\#define {\bfseries F\+\_\+\+C\+PU}~1000000
+\item 
+\mbox{\Hypertarget{_photon_8c_ac9a16e880f5e035fdfa91055cd6ea685}\label{_photon_8c_ac9a16e880f5e035fdfa91055cd6ea685}} 
+\#define {\bfseries S\+S\+D1306\+\_\+\+S\+CL}~P\+B1
+\item 
+\mbox{\Hypertarget{_photon_8c_a87889918230a8a21e8f836f0c8fada7c}\label{_photon_8c_a87889918230a8a21e8f836f0c8fada7c}} 
+\#define {\bfseries S\+S\+D1306\+\_\+\+S\+DA}~P\+B0
+\item 
+\mbox{\Hypertarget{_photon_8c_a05d1c9f1ad427b445574bddab25583ab}\label{_photon_8c_a05d1c9f1ad427b445574bddab25583ab}} 
+\#define {\bfseries S\+S\+D1306\+\_\+\+SA}~0x78
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_photon_8c_a4513b9497816aee9279dbc87b423d3a4}\label{_photon_8c_a4513b9497816aee9279dbc87b423d3a4}} 
+\mbox{\hyperlink{struct_payload}{Payload}} {\bfseries read\+Payload\+From\+Ble} ()
+\item 
+\mbox{\Hypertarget{_photon_8c_a4356a99883ee2ccfe812c4c45913f746}\label{_photon_8c_a4356a99883ee2ccfe812c4c45913f746}} 
+\mbox{\hyperlink{struct_draw_cmd}{Draw\+Cmd}} {\bfseries payload\+To\+Draw\+Cmd} (\mbox{\hyperlink{struct_payload}{Payload}} p)
+\item 
+\mbox{\Hypertarget{_photon_8c_ae13c7f95f1ceda0fec18d18c3d7619f6}\label{_photon_8c_ae13c7f95f1ceda0fec18d18c3d7619f6}} 
+void {\bfseries update\+Ui} ()
+\item 
+\mbox{\Hypertarget{_photon_8c_a02fd73d861ef2e4aabb38c0c9ff82947}\label{_photon_8c_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{_photon_8c_a7d9edd8b0a8d0d2f737eb5ee0b0a5040}\label{_photon_8c_a7d9edd8b0a8d0d2f737eb5ee0b0a5040}} 
+void {\bfseries render} ()
+\item 
+\mbox{\Hypertarget{_photon_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_photon_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+int {\bfseries main} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main entry point into the firmware. 
+
+\begin{DoxyAuthor}{Author}
+Bogdan Vitel 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/11/2017 23\+:43\+:37 
+\end{DoxyDate}

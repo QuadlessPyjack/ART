@@ -1,0 +1,33 @@
+\hypertarget{struct_data}{}\section{Data Struct Reference}
+\label{struct_data}\index{Data@{Data}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_data_a949c540719e2dc9e8b08de7ad656fcf3}\label{struct_data_a949c540719e2dc9e8b08de7ad656fcf3}} 
+enum {\bfseries E\+\_\+\+T\+Y\+PE} \{ {\bfseries N\+O\+T\+\_\+\+S\+ET} = 0, 
+{\bfseries U\+I\+N\+T8} = 1, 
+{\bfseries U\+I\+N\+T16} = 2, 
+{\bfseries P\+A\+Y\+L\+O\+AD} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_data_af2291e68d0cbdbde4ea4402f217fb994}\label{struct_data_af2291e68d0cbdbde4ea4402f217fb994}} 
+enum Data\+::\+E\+\_\+\+T\+Y\+PE {\bfseries type}
+\item 
+\mbox{\Hypertarget{struct_data_aa56ca9a25fefdd6b25b3468184c036fd}\label{struct_data_aa56ca9a25fefdd6b25b3468184c036fd}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t {\bfseries uint8}\\
+\>uint16\_t {\bfseries uint16}\\
+\>\mbox{\hyperlink{struct_payload}{Payload}} {\bfseries payload}\\
+\} {\bfseries value}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+utils/circularqueue.\+h\end{DoxyCompactItemize}
